@@ -101,6 +101,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                     documents.uploadPDFFileFirebase(data.getData(),filename,progressDialog);
+
                     Toast.makeText(MainActivity.this,"File Uploaded",Toast.LENGTH_LONG).show();
 
                 }
