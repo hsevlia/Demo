@@ -57,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         UploadButton.setEnabled(false);
+        filename.setEnabled(false);
 
         SelectButton.setOnClickListener(new OnClickListener() {
             @Override
@@ -91,10 +92,12 @@ public class MainActivity extends AppCompatActivity {
 
             UploadButton.setEnabled(true);
             filename.setText(data.getDataString().substring(data.getDataString().lastIndexOf("/")+1));
+            filename.setEnabled(true);
 
             UploadButton.setOnClickListener(new OnClickListener() {
                 @Override
                 public void onClick(View view) {
+
 
 
                     documents.uploadPDFFileFirebase(data.getData(),filename,progressDialog);
