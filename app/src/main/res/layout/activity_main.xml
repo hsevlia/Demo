@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#B1E4E3">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="90dp"
+        android:layout_below="@+id/upload1"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/select"
+        android:backgroundTint="#E0FFFF"
+        android:layout_marginTop="70dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/image"
+                app:tint="#036362" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="SELECT THE DOCUMENT"
+                android:textSize="18dp"
+                android:textColor="#036362"
+                android:layout_weight="1"
+                android:fontFamily="@font/railway"
+                android:padding="8dp"/>
+
+                <EditText
+                    android:id="@+id/filename"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Pdf File Only"
+                    android:textColor="#036362"
+                    android:textSize="13dp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="460dp"
+        android:backgroundTint="#036362"
+        app:cardElevation="20dp">
+
+
+        <ImageView
+            android:id="@+id/pdfimage"
+            android:layout_width="370dp"
+            android:layout_height="351dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/pdf" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="300dp"
+            android:layout_marginRight="50dp"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="You need to upload your "
+            android:textColor="@color/white"
+            android:textSize="15dp"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="330dp"
+            android:layout_marginRight="50dp"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="Documents Here"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold"
+
+            />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="430dp"
+        android:backgroundTint="#00000000"
+        android:elevation="100dp"
+        android:id="@+id/upload1"
+        app:cardElevation="100dp">
+
+        <Button
+            android:id="@+id/upload"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/upload"
+            android:fontFamily="@font/railway"
+            android:text="UPLOAD"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="35dp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
