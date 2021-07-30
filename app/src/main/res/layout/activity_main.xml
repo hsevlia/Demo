@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="#B1E4E3">
+    android:background="#FDFFFF">
 
 
     <androidx.cardview.widget.CardView
@@ -14,7 +14,7 @@
         android:layout_below="@+id/upload1"
         android:layout_centerHorizontal="true"
         android:id="@+id/select"
-        android:backgroundTint="#E0FFFF"
+        android:backgroundTint="#FDFEFF"
         android:layout_marginTop="70dp">
 
 
@@ -69,7 +69,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="460dp"
-        android:backgroundTint="#036362"
+        android:backgroundTint="#31C1BC"
         app:cardElevation="20dp">
 
 
